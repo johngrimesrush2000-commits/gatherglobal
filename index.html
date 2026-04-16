@@ -1,24 +1,131 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head> 
-    <meta name="google-site-verification" content="lrFd8N8r2Z23ERO0yyMCBbzG8IPU7Fbi6bbLnGrF2PY" />
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gather — social scheduling</title>
-    <style>
-      body { font-family: -apple-system, sans-serif; max-width: 680px; margin: 80px auto; padding: 0
-  24px; color: #1a1a1a; }
-      h1 { font-size: 2rem; margin-bottom: 8px; }
-      p { color: #555; line-height: 1.6; }
-      a { color: #1a1a1a; }
-    </style>
-  </head>
-  <body>
-    <h1>gather.</h1>
-    <p>Social scheduling, made simple. Plan events with friends — vote on times, suggest venues, and
-  confirm plans together.</p>
-     <p><a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="support.html">Support</a>
-  &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a></p>
-  </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gather — Plans, without the chaos.</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #FAF7F2;
+      --surface:  #FFFFFF;
+      --border:   #E8E0D4;
+      --cta:      #D96B4E;
+      --text:     #1A1410;
+      --textSub:  #6B5E52;
+      --textMuted:#A89B8E;
+    }
+    body {
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    nav img {
+      height: 36px;
+      width: 36px;
+      object-fit: contain;
+    }
+    nav .site-name {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--cta);
+      letter-spacing: -0.5px;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 80px;
+    }
+    .hero-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -1.5px;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+    .hero-title span {
+      color: var(--cta);
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--textSub);
+      max-width: 520px;
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0 24px;
+    }
+    .footer-links {
+      font-size: 14px;
+      color: var(--textMuted);
+    }
+    .footer-links a {
+      color: var(--textMuted);
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: var(--cta);
+    }
+    .footer-links .sep {
+      margin: 0 10px;
+    }
+    .copyright {
+      margin-top: 10px;
+      font-size: 13px;
+      color: var(--textMuted);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/">
+      <img src="icon-1024.png" alt="gather logo" />
+      <span class="site-name">gather.</span>
+    </a>
+  </nav>
+
+  <main>
+    <h1 class="hero-title">Plans, without<br>the <span>chaos.</span></h1>
+    <p class="hero-sub">
+      Social scheduling, made simple. Plan events with friends — vote on times,
+      suggest venues, and confirm plans together.
+    </p>
+
+    <hr class="divider" />
+
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span class="sep">·</span>
+      <a href="terms.html">Terms of Service</a>
+      <span class="sep">·</span>
+      <a href="support.html">Support</a>
+    </div>
+    <p class="copyright">© 2026 John Grimes. All rights reserved.</p>
+  </main>
+
+</body>
+</html>
