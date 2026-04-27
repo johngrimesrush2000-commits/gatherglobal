@@ -97,6 +97,32 @@
       font-size: 13px;
       color: var(--textMuted);
     }
+     .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.2px;
+  }
+  .btn-primary {
+    background: var(--cta);
+    color: #fff;
+  }
+  .btn-primary:hover { background: #c45a3d; }
+  .btn-secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1.5px solid var(--border);
+  }
+  .btn-secondary:hover { border-color: var(--cta); color: var(--cta); }
   </style>
 </head>
 <body>
@@ -110,10 +136,19 @@
 
   <main>
     <h1 class="hero-title">gather. make plans,<br>not <span>chaos.</span></h1>
-    <p class="hero-sub">
-      Social scheduling, made simple. Plan events with friends — vote on times,
-      suggest venues, and confirm plans together.
-    </p>
+     <p class="hero-sub">
+    Social scheduling, made simple. Plan events with friends — vote on times,
+    suggest venues, and confirm plans together.
+  </p>
+
+  <div class="cta-row">
+    <a href="https://apps.apple.com/app/gather/id6745189960" class="btn btn-primary">
+      Download on the App Store
+    </a>
+    <a href="https://gather-taupe-three.vercel.app" target="_blank" class="btn btn-secondary">
+      Open Web App
+    </a>
+  </div>
 
     <hr class="divider" />
 
