@@ -1,0 +1,11 @@
+{
+    "applinks": {
+      "apps": [],
+      "details": [
+        {
+          "appID": "55L7VP2R62.com.johng.gather",
+          "paths": ["/join", "/join*"]
+        }
+      ]
+    }
+  }
