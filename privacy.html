@@ -131,7 +131,7 @@
 
   <main>
     <h1 class="page-title">Privacy Policy</h1>
-    <p class="last-updated">Last updated: April 2026</p>
+    <p class="last-updated">Last updated: May 2026</p>
 
     <p class="intro">
       gather is built on a simple idea: making plans with people you care about should be easy.
@@ -146,12 +146,13 @@
       <li>Calendar availability data from Google Calendar, when you choose to connect it</li>
       <li>Events you create, time slots you vote on, and venues you suggest</li>
       <li>Friend connections you make within gather</li>
-      <li>Photos you submit through Photo Moments after an event</li>
+      <li>Photos you take during Photo Moments — a randomly-timed 2-minute window during your confirmed event where all participants are prompted simultaneously to snap and share a photo</li>
+      <li>Camera access on your device, used only when a Photo Moment is active and you choose to take a photo</li>
       <li>Device push notification tokens (to send you event alerts)</li>
     </ul>
     <p>
       We do not collect your full calendar content — only free/busy availability blocks used to show
-      when you and your friends are free.
+      when you and your friends are free. Camera access is never used outside of an active Photo Moment.
     </p>
 
     <h2>2. How we use your information</h2>
@@ -174,7 +175,8 @@
       <li><strong>Supabase</strong> — our database and authentication provider. Your account data is stored securely on Supabase infrastructure.</li>
       <li><strong>Google OAuth</strong> — used only when you choose to connect Google Calendar. We store a token to read your availability, not your full calendar.</li>
       <li><strong>OneSignal</strong> — handles push notifications. Your device token is shared with OneSignal solely to deliver alerts.</li>
-      <li><strong>Mapbox</strong> — powers venue maps within events. Map interactions are subject to Mapbox's privacy policy.</li>
+      <li><strong>Google Places API</strong> — used for venue search and autocomplete when suggesting locations for events. Search queries are subject to Google's privacy policy.</li>
+      <li><strong>Supabase Storage</strong> — Photo Moment images are stored securely in Supabase's cloud storage. Photos are only accessible to participants of the relevant event.</li>
     </ul>
 
     <h2>4. Data storage and security</h2>
@@ -194,6 +196,7 @@
       <li>Delete your account and all associated data</li>
       <li>Disconnect Google Calendar at any time from Settings</li>
       <li>Turn off push notifications at any time from Settings → Notifications</li>
+      <li>Revoke camera access at any time via your device Settings</li>
     </ul>
     <p>To request account deletion or a copy of your data, contact us at the address below.</p>
 
